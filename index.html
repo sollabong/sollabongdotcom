@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/8a2de3897f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Staatliches&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <ul class="side-menu">
+        <li><a href="#"><i class="fa fa-bars"></i>CHECK OUT MY PORTFOLIO</a></li>
+        <li><a href="#dev-portfolio"><i class="fa fa-code"></i>FRONTEND DEV</a></li>
+        <li><a href="#music-portfolio"><i class="fa fa-headphones"></i>MUSIC PRODUCTION</a></li>
+        <li><a href="#marketing-skills"><i class="fa fa-bullhorn"></i>ONLINE MARKETING</a></li>
+        <li><a href="#contact"><i class="fa fa-id-card"></i>CONTACT</a></li>
+    </ul>
+    <!-- fancy header with changing skills -->
+    <div class="header">
+        <div class="outer">
+            <div class="static">HELLO, I AM<br>SOLLABONG</div>
+            <div class="container">
+                <div class="inner">
+                    <div class="item">KEEN FRONTEND DEV</div>
+                    <div class="item">MUSIC PRODUCTION</div>
+                    <div class="item">ONLINE MARKETING</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- dev portfolio -->
+    <div id="dev-portfolio">
+        <h1>THIS IS THE DEV PORTFOLIO SECTION</h1>
+        <section class="section text-white">
+            <div class="dev-list">
+                <ul>
+                    <li><a class="dev-icon text-center text-white" href="#"><i class="fab fa-html5 fa-2x"></i></a>
+                    </li>
+                    <li><a class="dev-icon text-center text-white" href="#"><i class="fab fa-css3-alt fa-2x"></i></a>
+                    </li>
+                    <li><a class="dev-icon text-center text-white" href="#"><i class="fab fa-js-square fa-2x"></i></a>
+                    </li>
+                    <li><a class="dev-icon text-center text-white" href="#"><i class="fab fa-react fa-2x"></i></a>
+                    </li>
+                    <li><a class="dev-icon text-center text-white" href="#"><i class="fab fa-node-js fa-2x"></i></a>
+                    </li>
+                    <li><a class="dev-icon text-center text-white" href="#"><i
+                                class="fab fa-github-square fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- music portfolio -->
+    <div id="music-portfolio">
+
+        <h1>LISTEN TO ME</h1>
+
+        <p id="music-contact"> If you need commercial music, a beat or some producing advice, </br>
+            <a class="submit-btn" href="#contact">contact me!</a></p>
+
+        <div class="portfolio">
+            <ul>
+                <li><a class="portfolio-link" href="https://open.spotify.com/album/0OiWP4mx4MMKtWMMyD2H9j"
+                        target="_blank">
+                        <img class="portfolio-img" src="https://i.imgur.com/0KDVRZQ.jpg" alt="Sollabong Faith EP"></a>
+                </li>
+                <li><a class="portfolio-link" href="https://open.spotify.com/album/6CQ8NblpfsXRetStiqiAJQ"
+                        target="_blank">
+                        <img class="portfolio-img" src="https://i.imgur.com/zlP4WD5.jpg" alt="Sollabong Faith EP"></a>
+                </li>
+                <li><a class="portfolio-link" href="https://open.spotify.com/album/1xEod6FdaOwjmjlbN3i0gP"
+                        target="_blank">
+                        <img class="portfolio-img" src="https://i.imgur.com/3sNVLrm.jpg" alt="Sollabong Faith EP"></a>
+                </li>
+                <li><a class="portfolio-link" href="https://open.spotify.com/album/1w6Y6V2v4g85MXk100Jf34"
+                        target="_blank">
+                        <img class="portfolio-img" src="https://i.imgur.com/NDaTyO8.jpg" alt="Sollabong Faith EP"></a>
+                </li>
+            </ul>
+        </div>
+        <p class="portfolio-desc">I'm a hungarian electronic music producer with a classic taste since 2007, and i'm
+            here to entertain you! Classic dubstep, melodies and space sounds</p>
+    </div>
+    <!-- marketing skills -->
+    <div id="marketing-skills">
+        <p>THIS IS THE ONLINE MARKETING SECTION</p>
+    </div>
+    <!-- contact section -->
+    <section id="contact" class="section text-black">
+        <div class="container-footer">
+            <div class="col">
+                <h1>GET IN TOUCH</h1>
+                <ul class="contact__list">
+                    <li><a class="contact__icon text-center text-black" href="#" target="_blank"><span
+                                class="fa fa-spotify"></span></a>
+                    </li>
+                    <li><a class="contact__icon text-center text-black" href="#" target="_blank"><span
+                                class="fa fa-instagram"></span></a>
+                    </li>
+                    <li><a class="contact__icon text-center text-black" href="#" target="_blank"><span
+                                class="fa fa-facebook-f"></span></a>
+                    </li>
+                    <li><a class="contact__icon text-center text-black" href="#" target="_blank"><span
+                                class="fa fa-linkedin"></span></a>
+                    </li>
+                    <li><a class="contact__icon text-center text-black" href="#" target="_blank"><span
+                                class="fa fa-github"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Get in touch contact form -->
+        <section class="get-in-touch">
+            <form method="post" class="contact-form row" action="contact-form-handler.php">
+                <div class="form-field align-center">
+                    <input id="name" class="input-text js-input" type="text" required>
+                    <label class="label" for="name">Name</label>
+                </div>
+                <div class="form-field align-center">
+                    <input id="email" class="input-text js-input" type="email" required>
+                    <label class="label" for="email">E-mail</label>
+                </div>
+                <div class="form-field align-center">
+                    <input id="message" class="input-text js-input" type="text" required>
+                    <label class="label" for="message">Message</label>
+                </div>
+                <div class="form-field align-center">
+                    <input class="submit-btn" type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+    </section>
+    <!-- here comes the js -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
