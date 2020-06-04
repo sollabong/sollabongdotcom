@@ -1,5 +1,6 @@
 
 
+/* Global styles */
 
 html,body{
 	height: 100%;
@@ -8,15 +9,35 @@ html,body{
     scroll-behavior: smooth;
 }
 
-* {
-	font-family: 'Staatliches', cursive;
+a:link {
+    text-decoration: none;
+
+} 
+a:visited {
+    text-decoration: none;
+
+}
+a:hover {
+    text-decoration: none;
+
+}
+a:active {
+    text-decoration: none;
+
 }
 
 h1{
-    
+    padding-left: 60px;
+    padding-right: 60px;
     font-size: 3rem;
     padding-top: 5%;
     margin-top:0px;
+    font-family: 'Staatliches', cursive;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* side nav */
@@ -33,6 +54,7 @@ h1{
     background: rgba(255, 255, 255, 0.87);
     overflow: hidden;
     transition: width .5s;
+    font-family: 'Staatliches', cursive;
   }
   .side-menu i {
     color: orange;
@@ -68,12 +90,13 @@ h1{
 /* header section */
 .header{
     display: flex;
-    height: 100%;
-    width: 100%;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100vw;
+    justify-content: center;
 	align-items: center;
-	justify-content: center;
 	background: #ffda61;
-	
+	font-family: 'Staatliches', cursive;
 }
 .outer{
 	display: inline;
@@ -157,30 +180,23 @@ h1{
 	align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 
 #dev-portfolio h1{
     color: #ffda61;
-    font-size: 3rem;
-    padding-top: 5%;
-    margin-top:0px;
-}
-
-.text-white {
-    color: white;
 }
 
 .dev-list {
-    display: inline;
-    position: relative;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
     list-style-type: none;
-    padding-left: 0px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
-.dev-list ul{
-    padding-left: 0px;;
-}
+
 
 .dev-icon {
     width: 80.4px;
@@ -188,12 +204,12 @@ h1{
     padding-left: 0px;
     margin-top: 10px;
     font-size: 2rem;
-    
 }
 
 .dev-list li {
     display: inline-block;
 }
+
 .fab, .fas {
     color:white;
     width: 80px;
@@ -203,125 +219,142 @@ h1{
 padding-left: 10%;
 padding-right: 10%;
 justify-content: space-evenly;
+font-family: 'Staatliches', cursive;
 }
 
-.project-button{
-    display: inline-block;
-    background-color: #ffda61;
-    color: black;
-    font-family: 'Staatliches', sans-serif;
-    letter-spacing: 2px;
-    font-size: 16px;
-    padding: 10px 30px 10px 30px;
-    margin: 3%;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    text-decoration: none;
-}
-.project-button :active :hover :visited{
-    border: 0px;
-    border-color: transparent;
-}
 /* music section */
-
 #music-portfolio{
-    height: 100%;
-    background: #ffda61;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     width: 100vW;
 	align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: #ffda61;
 }
-#music-portfolio h1{
-    color: black;
-    font-size: 3rem;
-    padding-top: 5%;
-    margin-top:0px;
+.music-about{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    width: 60vw;
+    background-color: white;
+    padding: 30px;
+    box-shadow: black;
+    border-radius: 10px;
 }
-.portfolio-desc{
-    color: black;
-    font-weight: 100;
-    font-size: 1.5rem;
-    padding: 2% 15% 0% 15%;
-    margin-top:0px;
-    font-family: 'Montserrat';
+.music-pic{
+    vertical-align: center;
+    height: 275px;
+    width: 275px;
+    border-radius: 100%;
 }
-#music-contact{
-    color: white;
-    padding: 0% 15% 0 15%;
-    margin-top:0px;
-    font-size: 2.5rem;
-    font-family: 'Montserrat';
+.sollabong{
+    height: 275px;
+    width: 275px;
+    border-radius: 100%;  
 }
-.portfolio {
-    text-align: center;
-    justify-content: center;
-    position: relative;
+.music-about-right{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: justify;
+    margin-left: 60px;
+}
+.music-about-content_a{
+    font-family: 'Montserrat', sans-serif;
+}
+.music-about-content_b{
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
 }
 
-.portfolio-img {
-    width: 250px;
-    height: 250px;
-    padding: 2%;
+.music-about .submit-btn{
+    margin-left: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.portfolio{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+    list-style-type: none;
+}
+.portfolio-img{
+    height: 275px;
+    width: 275px;
     filter: grayscale(100%);
 }
-  
-.portfolio-link :hover {
-    transform: scale(1.3);
-    transition: all 0.5s ease-in-out;
-    filter: grayscale(0%);
-}
-.portfolio ul {
-    list-style-type: none;
-    padding-left: 0px;
-}
-  
-.portfolio li {
-    display: inline;
+
+.portfolio-link{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
 }
 
-.contact-me {
-    padding: 1%;
-    margin-top:30px;
-    border-radius: 5%;
-    border: 3px solid orange;
-    color: orange;
-    text-decoration: none;
+.img-desc{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Staatliches', cursive;
+}
+
+.portfolio-link :hover{
+    filter: grayscale(0%);    
+}
+
+.portfolio li {
     display: inline-block;
 }
 
-.contact-me :visited {
-    color: orange;
-    text-decoration: none;
+.music-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 5%;
+    color: black;
 }
-.contact-me :hover {
-    color: orange;
-    text-decoration: none;
+.music-list li {
+    display: inline-block;
 }
-.contact-me :active {
-    color: orange;
-    text-decoration: none;
+
+.music-icon {
+    width: 80.4px;
+    padding-right: 30px;
+    padding-left: 0px;
+    margin-top: 10px;
+    font-size: 2rem;
+    color: black;
 }
-.col {
-    text-align: center;
+
+.music-icon  .fab {
+    color:orange;
+    width: 80px;
 }
+
 /* marketing section */
 
 #marketing-skills{
+    display: flex;
+    flex-direction: column;
     height: 100%;
     background: black;
-    display: flex;
     width: 100vW;
 	align-items: center;
 	justify-content: center;
 }
-#marketing-skills p{
+#marketing-skills h1{
+    text-align: center;
     color: #ffda61;
     font-size: 3rem;
-    width: 100%;
-    margin: 10%;
-    text-align: center;
 }
 /* contact section */
 
@@ -331,6 +364,9 @@ justify-content: space-evenly;
 }
 .container-footer {
     padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section {
@@ -426,25 +462,17 @@ justify-content: space-evenly;
     padding: 10px 20px 10px 20px;
     margin: 3%;
     border: none;
+    border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
  }
 
 
-@media screen and (max-width: 1000px) {
-    
-    .portfolio-img {
-        width: 150px;
-        height: 150px;
-        padding: 2%;
-        filter: grayscale(100%);
-    }
-}
 @media screen and (max-width: 700px) {
     .header{
         display: flex;
         height: 100%;
-        width: 100%;
+        width: 100vw;
         align-items: center;
         justify-content: center;
         background: #ffda61;
@@ -457,16 +485,10 @@ justify-content: space-evenly;
         display:inline-flex;
         align-items: center;
         justify-content: center;
-        /* width: 400px; */
         width: 100%;
 
     }
-    .portfolio-img {
-        width: 100px;
-        height: 100px;
-        padding: 2%;
-        filter: grayscale(100%);
-    }
+    
     .item{
         position: absolute;
         animation-duration: 2.5s;
@@ -492,16 +514,16 @@ justify-content: space-evenly;
         transform: translateZ(-offset);
         transform-style: preserve-3d;
         height: 100%;
-        /* display: flex; */
+        display: flex;
         align-items: center;
         justify-content: center;
     } 
 
-    h1{
-        font-size: 1rem;
-    }
     .contact__icon {
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         width: 40.4px;
         height: 40.4px;
         padding: 1%;
@@ -516,13 +538,13 @@ justify-content: space-evenly;
         font-size: 1.4rem;
         padding: 2% 15% 0 15%;
         margin-top:0px;
-        font-family: 'Montserrat';
+
     }
     #music-contact{
         color: white;
         padding: 0% 15% 0 15%;
         margin-top:0px;
         font-size: 1.4rem;
-        font-family: 'Montserrat';
+        margin-bottom: 5%;
     }
 }
