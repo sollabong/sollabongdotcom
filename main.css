@@ -339,6 +339,10 @@ font-family: 'Staatliches', cursive;
     color:orange;
     width: 80px;
 }
+.music-icon:hover  .fab  {
+    color:black;
+    width: 80px;
+}
 
 /* marketing section */
 
