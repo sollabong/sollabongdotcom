@@ -323,8 +323,12 @@ font-family: 'Staatliches', cursive;
     filter: grayscale(0%);    
 }
 
+.portfolio ul{
+    padding-left: 0px;
+}
 .portfolio li {
     display: inline-block;
+
 }
 
 .music-list{
@@ -398,11 +402,7 @@ font-family: 'Staatliches', cursive;
     color: black;
 }
 
-.text-orange {
-    color: black;
-}
-
-.text-white {
+.text-black {
     color: black;
 }
 .contact__list {
@@ -452,6 +452,7 @@ font-family: 'Staatliches', cursive;
     position: relative;
     text-align: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .input-text{
@@ -470,6 +471,9 @@ font-family: 'Staatliches', cursive;
     text-align: center;
     justify-content: center;
 }
+.label{
+    font-family: 'Staatliches', sans-serif;
+}
 
 .submit-btn {
     display: inline-block;
@@ -487,6 +491,18 @@ font-family: 'Staatliches', cursive;
     text-decoration: none;
  }
 
+ .footer{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     color:rgb(252, 221, 119);
+     background-color: black;
+     padding: 30px;
+     font-size: small;
+     text-align: center;
+     height: 100px;
+     font-family: 'Mntserrat', sans-serif;
+ }
 
 @media screen and (max-width: 900px) {
     .header{
@@ -593,4 +609,6 @@ font-family: 'Staatliches', cursive;
         text-align: justify;
         margin: 20px;
     }
+
+
 }
