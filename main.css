@@ -117,13 +117,13 @@ p{
 
 .item{
 	position: absolute;
-	animation-duration: 2.5s;
+	animation-duration: 1.5s;
 	animation-fill-mode: backwards;
 	animation-timing-function: ease;
 	z-index: 100;
 	backface-visibility: hidden;
-    font-size: 60px;
-    font-weight: 200;
+    font-size: 4rem;
+    font-weight: 400;
 	white-space: nowrap;
 	visibility: hidden;
 	border-bottom: 3px solid black;
@@ -140,7 +140,6 @@ p{
 	transform: translateZ(-offset);
 	transform-style: preserve-3d;
 	height: 100%;
-	
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -165,7 +164,7 @@ p{
 }
 
 .static{
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 4rem;
     text-align: center;
 }
@@ -197,6 +196,10 @@ p{
     padding-right: 60px;
 }
 
+.carousel-cell {
+
+    margin-right: 30px;
+  }
 
 .dev-icon {
     width: 80.4px;
@@ -344,6 +347,7 @@ font-family: 'Staatliches', cursive;
 }
 .music-list li {
     display: inline-block;
+    text-align: center;
 }
 
 .music-icon {
@@ -361,7 +365,6 @@ font-family: 'Staatliches', cursive;
 }
 .music-icon:hover  .fab  {
     color:black;
-    width: 80px;
 }
 
 /* marketing section */
@@ -497,14 +500,32 @@ font-family: 'Staatliches', cursive;
      align-items: center;
      color:rgb(252, 221, 119);
      background-color: black;
-     padding: 30px;
      font-size: small;
      text-align: center;
      height: 100px;
      font-family: 'Mntserrat', sans-serif;
+     width:100vw;
+	justify-content: center;
  }
 
+.icons{
+    padding-left:0px;
+
+}
+
+.thankyou_message{
+    display:none;
+    height: 100px;
+    background: #ffda61;
+	align-items: center;
+    justify-content: center;
+    vertical-align: center;
+    color: black;
+}
+
 @media screen and (max-width: 900px) {
+
+    
     .header{
         display: flex;
         height: 100%;
@@ -532,13 +553,19 @@ font-family: 'Staatliches', cursive;
         animation-timing-function: ease;
         z-index: 100;
         backface-visibility: hidden;
-        font-size: 40px;
-        font-weight: 200;
+        font-size: 3rem;
+        font-weight: 400;
         white-space: nowrap;
         visibility: hidden;
         border-bottom: 3px solid black;
         border-top: 3px solid black;
         transform-style: preserve-3d;
+    }
+
+    .static{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
     }
     
     .animate{
@@ -566,6 +593,20 @@ font-family: 'Staatliches', cursive;
         border-radius: 100%;
         border: 2px solid black;
         font-size: 2rem;
+    }
+    
+    .music-icon .fab {
+        width: 65.4px;
+        padding: 1%;
+        margin-top: 10px;
+        font-size: 3rem;
+    }
+
+    .dev-icon .fab {
+        width: 65.4px;
+        padding: 1%;
+        margin-top: 10px;
+        font-size: 3rem;
     }
 
     .portfolio-desc{
@@ -609,6 +650,50 @@ font-family: 'Staatliches', cursive;
         text-align: justify;
         margin: 20px;
     }
-
-
+/* menu mobile */
+    .side-menu {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        width: 60px;
+        list-style-type: none;
+        background: rgba(255, 255, 255, 0.87);
+        overflow: hidden;
+        transition: height .5s;
+        font-family: 'Staatliches', cursive;
+      }
+      .side-menu i {
+        color: orange;
+      }
+      .side-menu:hover {
+        height: 300px;
+      }
+      
+      .side-menu li {
+        height: 60px;
+      }
+      
+      .side-menu li i {
+        font-size: 1rem;
+        margin: 20px 30px 0 22px;
+      }
+      
+      .side-menu li a {
+        display: block;
+        font-size: .9rem;
+        text-decoration: none;
+        color: black;
+        /* height: 60px; */
+      }
+      
+      .side-menu li a:hover,
+      .side-menu li:first-child a {
+        background: #14081d;
+        color:white;
+        display: block;
+      }
 }

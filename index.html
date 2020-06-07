@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- disable eslint -->
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -16,8 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sollabong Portfolio Page</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="cards.css">
     <script src="https://kit.fontawesome.com/8a2de3897f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Staatliches&display=swap"
         rel="stylesheet">
@@ -25,6 +26,7 @@
 
 <body>
     <!-- navbar -->
+
     <ul class="side-menu">
         <li><a href="#"><i class="fa fa-bars"></i>CHECK OUT MY PORTFOLIO</a></li>
         <li><a href="#dev-portfolio"><i class="fa fa-code"></i>FRONTEND DEV</a></li>
@@ -32,6 +34,7 @@
         <li><a href="#marketing-skills"><i class="fa fa-bullhorn"></i>ONLINE MARKETING</a></li>
         <li><a href="#contact"><i class="fa fa-id-card"></i>CONTACT</a></li>
     </ul>
+
     <!-- fancy header with changing skills -->
     <div class="header">
         <div class="outer">
@@ -51,7 +54,7 @@
         <h1>LOOK, HOW I CODE</h1>
         <div class="section text-black">
             <div class="dev-list">
-                <ul>
+                <ul class="icons">
                     <li><a class="dev-icon text-center" href="#" title="HTML5"><i class="fab fa-html5 fa-2x"></i></a>
                     </li>
                     <li><a class="dev-icon text-center" href="#" title="CSS3"><i class="fab fa-css3-alt fa-2x"></i></a>
@@ -72,10 +75,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="projects slider">
+            <div class="projects main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
 
-                <article class="card slide ">
-                    <div class="card__wrapper">
+                <article class="card  ">
+                    <div class="card__wrapper carousel-cell">
 
                         <figure class="card__feature">
                             <img src="./assets/project1.jpg" class="card__img" alt="project 1" width="275" height="184">
@@ -95,8 +98,8 @@
                     </div>
                 </article>
 
-                <article class="card slide">
-                    <div class="card__wrapper">
+                <article class="card">
+                    <div class="card__wrapper carousel-cell">
 
                         <figure class="card__feature">
                             <img src="./assets/project2.jpg" class="card__img" alt="project 2" width="275" height="184">
@@ -115,8 +118,8 @@
 
                     </div>
                 </article>
-                <article class="card slide">
-                    <div class="card__wrapper">
+                <article class="card">
+                    <div class="card__wrapper carousel-cell">
 
                         <figure class="card__feature">
                             <img src="./assets/project3.jpg" class="card__img" alt="project 2" width="275" height="184">
@@ -135,8 +138,8 @@
                         </div>
                     </div>
                 </article>
-                <article class="card slide">
-                    <div class="card__wrapper">
+                <article class="card">
+                    <div class="card__wrapper carousel-cell">
 
                         <figure class="card__feature">
                             <img src="./assets/project4.jpg" class="card__img" alt="project 2" width="275" height="184">
@@ -156,8 +159,8 @@
                         </div>
                     </div>
                 </article>
-                <article class="card slide">
-                    <div class="card__wrapper">
+                <article class="card">
+                    <div class="card__wrapper carousel-cell">
 
                         <figure class="card__feature">
                             <img src="./assets/project5.jpg" class="card__img" alt="project 2" width="275" height="184">
@@ -177,8 +180,8 @@
                         </div>
                     </div>
                 </article>
-                <article class="card slide">
-                    <div class="card__wrapper">
+                <article class="card">
+                    <div class="card__wrapper carousel-cell">
 
                         <figure class="card__feature">
                             <img src="./assets/project6.jpg" class="card__img" alt="project 2" width="275" height="184">
@@ -230,7 +233,7 @@
         <h1>RELEASES</h1>
         <div class="portfolio">
 
-            <ul>
+            <ul class="icons">
                 <li><a class="portfolio-link"
                         href="https://open.spotify.com/album/0OiWP4mx4MMKtWMMyD2H9j?si=8sdwanBpScy5UP3T3icUZw"
                         target="_blank">
@@ -356,21 +359,25 @@
 
         <!-- Get in touch contact form -->
         <section class="get-in-touch">
-            <form method="post" class="contact-form row" action="contact-form-handler.php">
+            <form method="post" class="gform contact-form row"
+                action="https://script.google.com/macros/s/AKfycbyulaFzvLiQk-CkmqYBT1FpBVf6p74mx2vVmXrGUg/exec">
                 <div class="form-field align-center">
-                    <input id="name" class="input-text js-input" type="text" required>
-                    <label class="label" for="name">Name</label>
+                    <input id="name" name="name" class="input-text js-input" type="text" required>
+                    <label class="label" for="name" name="name">Name</label>
                 </div>
                 <div class="form-field align-center">
-                    <input id="email" class="input-text js-input" type="email" required>
+                    <input id="email" name="email" class="input-text js-input" type="email" required>
                     <label class="label" for="email">E-mail</label>
                 </div>
                 <div class="form-field align-center">
-                    <input id="message" class="input-text js-input" type="text" required>
+                    <input id="message" name="message" class="input-text js-input" type="text" required>
                     <label class="label" for="message">Message</label>
                 </div>
                 <div class="form-field align-center">
                     <input class="submit-btn" type="submit" value="Submit">
+                </div>
+                <div class="thankyou_message">
+                    <h1>Thanks for contacting me! I will get back to you soon!</h1>
                 </div>
             </form>
         </section>
@@ -380,7 +387,8 @@
         <p class="creator">All Rights Reserved 2020, Budapest, HU</p>
     </section>
     <!-- here comes the js -->
-    <script src="./index.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 </body>
 
 </html>
