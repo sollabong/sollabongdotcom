@@ -1,5 +1,4 @@
 
-
 /* Global styles */
 
 html,body{
@@ -32,7 +31,7 @@ h1{
     font-size: 3rem;
     padding-top: 5%;
     margin-top:0px;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches', sans-serif;
 }
 
 p{
@@ -54,7 +53,7 @@ p{
     background: rgba(255, 255, 255, 0.87);
     overflow: hidden;
     transition: width .5s;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches', sans-serif;
   }
   .side-menu i {
     color: orange;
@@ -96,7 +95,7 @@ p{
     justify-content: center;
 	align-items: center;
 	background: #ffda61;
-	font-family: 'Staatliches', cursive;
+	font-family: 'Staatliches', sans-serif;
 }
 .outer{
 	display: inline;
@@ -196,11 +195,6 @@ p{
     padding-right: 60px;
 }
 
-.carousel-cell {
-
-    margin-right: 30px;
-  }
-
 .dev-icon {
     width: 80.4px;
     padding-right: 30px;
@@ -218,11 +212,21 @@ p{
     width: 80px;
 }
 
+.slick-track{
+    display: flex;
+    min-width: 80vw;
+}
+
+.slick-slider{
+    min-width: 80vw;
+}
+.slick-dots li button:before{
+    color: #ffda61;
+}
+
 .projects{
-padding-left: 10%;
-padding-right: 10%;
-justify-content: space-evenly;
-font-family: 'Staatliches', cursive;
+justify-content: center;
+font-family: 'Staatliches', sans-serif;
 }
 
 .project-button{
@@ -284,7 +288,7 @@ font-family: 'Staatliches', cursive;
     font-family: 'Montserrat', sans-serif;
 }
 .music-about-content_b{
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches', sans-serif;
     font-size: 2rem;
 }
 
@@ -319,7 +323,7 @@ font-family: 'Staatliches', cursive;
     color: black;
     text-align: center;
     padding: 5px;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches', sans-serif;
 }
 
 .portfolio-link :hover{
@@ -664,7 +668,7 @@ font-family: 'Staatliches', cursive;
         background: rgba(255, 255, 255, 0.87);
         overflow: hidden;
         transition: height .5s;
-        font-family: 'Staatliches', cursive;
+        font-family: 'Staatliches', sans-serif;
       }
       .side-menu i {
         color: orange;

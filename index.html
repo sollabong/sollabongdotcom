@@ -24,9 +24,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
     <title>Sollabong Portfolio Page</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="cards.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <script src="https://kit.fontawesome.com/8a2de3897f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Staatliches&display=swap"
         rel="stylesheet">
@@ -83,132 +88,130 @@
                     </li>
                 </ul>
             </div>
-            <div class="projects main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-
-                <article class="card  ">
-                    <div class="card__wrapper carousel-cell">
-
-                        <figure class="card__feature">
-                            <img src="./assets/project1.jpg" class="card__img" alt="project 1" width="275" height="184">
-                        </figure>
-
-                        <div class="card__box">
-                            <header class="card__item card__header">
-                                <h6 class="card__item card__item--small card__label">HTML, CSS</h6>
-                                <h2 class="card__item card__item--small card__title">BUSINESS CARD</h2>
-                            </header>
-                            <section class="card__item card__body">
-                                <p>A full HTML and CSS project. Simple, responsive business card.</p>
-                                <a href="https://sollabong.github.io/aboutme/" target="_blank"><button
-                                        class="project-button">DEMO</button></a>
-                            </section>
+            <div class="slideshow">
+                <div class="projects slick">
+                    <article class="card">
+                        <div class="card__wrapper">
+                            <figure class="card__feature">
+                                <img src="./assets/project1.jpg" class="card__img" alt="project 1">
+                            </figure>
+                            <div class="card__box">
+                                <header class="card__item card__header">
+                                    <h6 class="card__item card__item--small card__label">HTML, CSS</h6>
+                                    <h2 class="card__item card__item--small card__title">BUSINESS CARD</h2>
+                                </header>
+                                <section class="card__item card__body">
+                                    <p>A full HTML and CSS project. Simple, responsive business card.</p>
+                                    <a href="https://sollabong.github.io/aboutme/" target="_blank"><button
+                                            class="project-button">DEMO</button></a>
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
 
-                <article class="card">
-                    <div class="card__wrapper carousel-cell">
-
-                        <figure class="card__feature">
-                            <img src="./assets/project2.jpg" class="card__img" alt="project 2" width="275" height="184">
-                        </figure>
-                        <div class="card__box">
-                            <header class="card__item card__header">
-                                <h6 class="card__item card__item--small card__label">HTML, CSS, JAVASCRIPT</h6>
-                                <h2 class="card__item card__item--small card__title">COLOR CLOCK</h2>
-                            </header>
-                            <section class="card__item card__body">
-                                <p>A coloured clock, which changes it's background color in every seconds.</p>
-                                <a href="https://sollabong.github.io/colorclock/" target="_blank"><button
-                                        class="project-button">DEMO</button></a>
-                            </section>
+                    <article class="card">
+                        <div class="card__wrapper">
+                            <figure class="card__feature">
+                                <img src="./assets/project2.jpg" class="card__img" alt="project 2">
+                            </figure>
+                            <div class="card__box">
+                                <header class="card__item card__header">
+                                    <h6 class="card__item card__item--small card__label">HTML, CSS, JAVASCRIPT</h6>
+                                    <h2 class="card__item card__item--small card__title">COLOR CLOCK</h2>
+                                </header>
+                                <section class="card__item card__body">
+                                    <p>A coloured clock, which changes it's background color in every seconds.</p>
+                                    <a href="https://sollabong.github.io/colorclock/" target="_blank"><button
+                                            class="project-button">DEMO</button></a>
+                                </section>
+                            </div>
                         </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__wrapper">
 
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__wrapper carousel-cell">
+                            <figure class="card__feature">
+                                <img src="./assets/project3.jpg" class="card__img" alt="project 2">
+                            </figure>
 
-                        <figure class="card__feature">
-                            <img src="./assets/project3.jpg" class="card__img" alt="project 2" width="275" height="184">
-                        </figure>
-
-                        <div class="card__box">
-                            <header class="card__item card__header">
-                                <h6 class="card__item card__item--small card__label">HTML, CSS, VANILLA.JS</h6>
-                                <h2 class="card__item card__item--small card__title">DUBSTEP DRUMPAD</h2>
-                            </header>
-                            <section class="card__item card__body">
-                                <p>A simple page, where you can play dubstep sounds with your keyboard keys</p>
-                                <a href="https://sollabong.github.io/dubstep_drumpad/" target="_blank"><button
-                                        class="project-button">DEMO</button></a>
-                            </section>
+                            <div class="card__box">
+                                <header class="card__item card__header">
+                                    <h6 class="card__item card__item--small card__label">HTML, CSS, VANILLA.JS</h6>
+                                    <h2 class="card__item card__item--small card__title">DUBSTEP DRUMPAD</h2>
+                                </header>
+                                <section class="card__item card__body">
+                                    <p>A simple page, where you can play dubstep sounds with your keyboard keys</p>
+                                    <a href="https://sollabong.github.io/dubstep_drumpad/" target="_blank"><button
+                                            class="project-button">DEMO</button></a>
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__wrapper carousel-cell">
+                    </article>
+                    <article class="card">
+                        <div class="card__wrapper">
 
-                        <figure class="card__feature">
-                            <img src="./assets/project4.jpg" class="card__img" alt="project 2" width="275" height="184">
-                        </figure>
+                            <figure class="card__feature">
+                                <img src="./assets/project4.jpg" class="card__img" alt="project 2">
+                            </figure>
 
-                        <div class="card__box">
-                            <header class="card__item card__header">
-                                <h6 class="card__item card__item--small card__label">HTML, CSS, JAVASCRIPT</h6>
-                                <h2 class="card__item card__item--small card__title">FRIENDS LOCATOR</h2>
-                            </header>
-                            <section class="card__item card__body">
-                                <p>I used Google Maps API and JS object. Search, info window,
-                                    get directions</p>
-                                <a href="https://sollabong.github.io/friendsLocator" target="_blank"><button
-                                        class="project-button">DEMO</button></a>
-                            </section>
+                            <div class="card__box">
+                                <header class="card__item card__header">
+                                    <h6 class="card__item card__item--small card__label">HTML, CSS, JAVASCRIPT</h6>
+                                    <h2 class="card__item card__item--small card__title">FRIENDS LOCATOR</h2>
+                                </header>
+                                <section class="card__item card__body">
+                                    <p>I used Google Maps API and JS object. Search, info window,
+                                        get directions</p>
+                                    <a href="https://sollabong.github.io/friendsLocator" target="_blank"><button
+                                            class="project-button">DEMO</button></a>
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__wrapper carousel-cell">
+                    </article>
+                    <article class="card">
+                        <div class="card__wrapper">
 
-                        <figure class="card__feature">
-                            <img src="./assets/project5.jpg" class="card__img" alt="project 2" width="275" height="184">
-                        </figure>
+                            <figure class="card__feature">
+                                <img src="./assets/project5.jpg" class="card__img" alt="project 2">
+                            </figure>
 
-                        <div class="card__box">
+                            <div class="card__box">
 
-                            <header class="card__item card__header">
-                                <h6 class="card__item card__item--small card__label">HTML, CSS, JAVASCRIPT</h6>
-                                <h2 class="card__item card__item--small card__title">PORTFOLIO</h2>
-                            </header>
-                            <section class="card__item card__body">
-                                <p>My portfolio page with flexbox. I used a bit Javascript for the changing text.</p>
-                                <a href="https://sollabong.com" target="_blank"><button
-                                        class="project-button">DEMO</button></a>
-                            </section>
+                                <header class="card__item card__header">
+                                    <h6 class="card__item card__item--small card__label">HTML, CSS, JAVASCRIPT</h6>
+                                    <h2 class="card__item card__item--small card__title">PORTFOLIO</h2>
+                                </header>
+                                <section class="card__item card__body">
+                                    <p>My portfolio page with flexbox. I used a bit Javascript for the changing text.
+                                    </p>
+                                    <a href="https://sollabong.com" target="_blank"><button
+                                            class="project-button">DEMO</button></a>
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__wrapper carousel-cell">
+                    </article>
+                    <article class="card">
+                        <div class="card__wrapper">
 
-                        <figure class="card__feature">
-                            <img src="./assets/project6.jpg" class="card__img" alt="project 2" width="275" height="184">
-                        </figure>
+                            <figure class="card__feature">
+                                <img src="./assets/project6.jpg" class="card__img" alt="project 2">
+                            </figure>
 
-                        <div class="card__box">
-                            <header class="card__item card__header">
-                                <h6 class="card__item card__item--small card__label">HTML, CSS, JAVASCRIPT</h6>
-                                <h2 class="card__item card__item--small card__title">FANCY SWITCHER</h2>
-                            </header>
-                            <section class="card__item card__body">
-                                <p>A simple Dark/Light switcher you can use on your page. Check Github for the
-                                    code!</p>
-                                <a href="https://sollabong.github.io/fancyDarkLightSwitcher/" target="_blank"><button
-                                        class="project-button">DEMO</button></a>
-                            </section>
+                            <div class="card__box">
+                                <header class="card__item card__header">
+                                    <h6 class="card__item card__item--small card__label">HTML, CSS, JAVASCRIPT</h6>
+                                    <h2 class="card__item card__item--small card__title">FANCY SWITCHER</h2>
+                                </header>
+                                <section class="card__item card__body">
+                                    <p>A simple Dark/Light switcher you can use on your page. Check Github for the
+                                        code!</p>
+                                    <a href="https://sollabong.github.io/fancyDarkLightSwitcher/"
+                                        target="_blank"><button class="project-button">DEMO</button></a>
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
             </div>
         </div>
     </div>
@@ -395,8 +398,57 @@
         <p class="creator">All Rights Reserved 2020, Budapest, HU</p>
     </section>
     <!-- here comes the js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script type="text/javascript" src="./index.js"></script>
     <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('.slideshow, .slick').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2500,
+
+                responsive: [
+                    {
+                        breakpoint: 1480,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+
+                            dots: true,
+                            infinite: true,
+                            speed: 300
+                        }
+                    },
+                    {
+                        breakpoint: 720,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            infinite: true,
+                            speed: 300,
+                            dots: false,
+                            arrows: false
+                        }
+
+
+                    }
+
+                ]
+            });
+
+        });
+
+    </script>
+
 </body>
 
 </html>
