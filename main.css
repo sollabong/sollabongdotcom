@@ -220,8 +220,45 @@ p{
 .slick-slider{
     min-width: 80vw;
 }
-.slick-dots li button:before{
-    color: #ffda61;
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	
+	margin: 0;
+	padding: 1rem 0;
+	
+	list-style-type: none;
+}
+.slick-dots li {
+	margin: 0 0.25rem;
+}
+.slick-dots li button::before {
+    font-family: slick;
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    content: "";
+    text-align: center;
+    opacity: 0.25;
+    color: rgb(0, 0, 0);
+    border: 2px solid #ffda61;
+    border-radius: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+.slick-dots button {
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	padding: 0;
+	border: none;
+	border-radius: 100%;
+	background-color: #ffda61;		
+	text-indent: -9999px;
 }
 
 .projects{
@@ -356,7 +393,7 @@ font-family: 'Staatliches', sans-serif;
 
 .music-icon {
     width: 80.4px;
-    padding-right: 30px;
+    /* padding-right: 30px; */
     padding-left: 0px;
     margin-top: 10px;
     font-size: 2rem;
