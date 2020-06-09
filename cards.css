@@ -4,8 +4,7 @@
   transition: all .125s;
   transform: scale(1) translateY(0px);
   margin: 5% 15px;
-  display: inline-block;
-
+  height: 100%;
 }
 
 /* Elements */
@@ -14,9 +13,9 @@
   background-color: #ffffff;
   color: #383838;
   margin: 0 1rem;
-    /* display: inline-block; */
-  margin: 5% 15px;
-
+  margin: 0% 15px;
+  align-self: stretch;
+  height: 100%;
 }
 .card__wrapper:after {
   content: '';

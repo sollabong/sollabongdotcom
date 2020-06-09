@@ -201,6 +201,7 @@ p{
     padding-left: 0px;
     margin-top: 10px;
     font-size: 2rem;
+    cursor: auto;
 }
 
 .dev-list li {
@@ -213,26 +214,40 @@ p{
 }
 
 .slick-track{
-    display: flex;
     min-width: 80vw;
 }
 
 .slick-slider{
+
     min-width: 80vw;
 }
+
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide
+{
+    height: inherit !important;
+}
+
+.slick-slide > div
+{
+    height: 100%;
+}
+
 
 .slick-dots {
 	display: flex;
 	justify-content: center;
-	
 	margin: 0;
 	padding: 1rem 0;
-	
 	list-style-type: none;
 }
 .slick-dots li {
 	margin: 0 0.25rem;
 }
+
 .slick-dots li button::before {
     font-family: slick;
     font-size: 6px;
@@ -280,6 +295,13 @@ font-family: 'Staatliches', sans-serif;
     cursor: pointer;
     text-decoration: none;
 }
+
+/* .demo{
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
 
 /* music section */
 #music-portfolio{
