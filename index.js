@@ -12,3 +12,10 @@ const items = Array.from(document.getElementsByClassName('item'));
         })
 
         items[0].classList.add('animate');
+//skill bar animation
+setTimeout(function(){
+    $('.bar').each(function(){
+        $(this).find('.load').animate({
+        width: $(this).attr('data-percent') }, 1500);
+    });
+}, 1000);

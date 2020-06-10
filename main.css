@@ -241,8 +241,8 @@ p{
 	display: flex;
 	justify-content: center;
 	margin: 0;
-	padding: 1rem 0;
-	list-style-type: none;
+	padding: 2rem 0;
+    list-style-type: none;
 }
 .slick-dots li {
 	margin: 0 0.25rem;
@@ -269,7 +269,7 @@ p{
 	display: block;
 	width: 1rem;
 	height: 1rem;
-	padding: 0;
+	padding: 30 0 0 0;
 	border: none;
 	border-radius: 100%;
 	background-color: #ffda61;		
@@ -408,6 +408,10 @@ font-family: 'Staatliches', sans-serif;
     margin-bottom: 5%;
     color: black;
 }
+
+.music-list ul{
+    padding-left: 0;
+}
 .music-list li {
     display: inline-block;
     text-align: center;
@@ -415,7 +419,6 @@ font-family: 'Staatliches', sans-serif;
 
 .music-icon {
     width: 80.4px;
-    /* padding-right: 30px; */
     padding-left: 0px;
     margin-top: 10px;
     font-size: 2rem;
@@ -431,21 +434,97 @@ font-family: 'Staatliches', sans-serif;
 }
 
 /* marketing section */
-
 #marketing-skills{
+    min-height: 100%;
+    background-color: black;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    background: black;
     width: 100vW;
 	align-items: center;
-	justify-content: center;
-}
-#marketing-skills h1{
+    justify-content: center;
     text-align: center;
-    color: #ffda61;
-    font-size: 3rem;
+    
 }
+
+#marketing-skills h1{
+    color: #ffda61;
+}
+
+
+.marketing-about{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 60vw;
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.marketing-about .submit-btn{
+    margin-left: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* my skills bars */
+.skills-container {
+    font-family: 'Staatliches', sans-serif;
+    width: 60vw;
+    margin: 2rem auto;
+  }
+  
+ 
+/* skill bar */
+.bar {
+    position: relative;
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    border: none;
+}
+  
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffda61;
+}
+/* nametag  */
+.tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 35px;
+    background-color: orange;;
+    color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px 0px 0px 5px;
+    text-align: left;
+}
+  
+.tag span {
+    display: block;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+}
+/* loading  */
+.load {
+    background-color: #ffda61;
+    width: 0;
+    height: 35px;
+    border-radius: 0px 5px 5px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 /* contact section */
 
 #contact {
@@ -660,16 +739,16 @@ font-family: 'Staatliches', sans-serif;
     
     .music-icon .fab {
         width: 65.4px;
-        padding: 1%;
+        padding: .5%;
         margin-top: 10px;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .dev-icon .fab {
         width: 65.4px;
-        padding: 1%;
+        padding: .5%;
         margin-top: 10px;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .portfolio-desc{
