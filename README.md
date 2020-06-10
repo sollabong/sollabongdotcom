@@ -6,5 +6,5 @@ CSS
 Javascript
 HTML
 
-Still under construction, but you can take a snake peek into it ;)
+Still under construction, but you can take a sneak peek into it ;)
 https://sollabong.com
