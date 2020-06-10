@@ -197,11 +197,14 @@ p{
 
 .dev-icon {
     width: 80.4px;
-    padding-right: 30px;
     padding-left: 0px;
     margin-top: 10px;
     font-size: 2rem;
     cursor: auto;
+}
+
+.dev-list ul{
+    padding-left: 0;
 }
 
 .dev-list li {
@@ -360,7 +363,7 @@ font-family: 'Staatliches', sans-serif;
 .portfolio{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 70vw;
     list-style-type: none;
 }
@@ -737,6 +740,10 @@ font-family: 'Staatliches', sans-serif;
         font-size: 2rem;
     }
     
+    .dev-icon{
+        width: 75px;
+    }
+
     .music-icon .fab {
         width: 65.4px;
         padding: .5%;
