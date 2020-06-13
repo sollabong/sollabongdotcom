@@ -40,6 +40,7 @@ p{
 }
 
 /* language switcher */
+/* language switcher */
 .switcher{
     display: flex;
     flex-direction: row;
@@ -61,14 +62,15 @@ p{
 
     width: 20px;
     height: 20px;
+    border: 3px solid orange;
+    border-radius: 20px;
 }
 
 .en{
 
     width: 20px;
     height: 20px;
-    border: 3px solid orange;
-    border-radius: 20px;
+    
 }
 
 
