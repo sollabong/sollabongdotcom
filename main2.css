@@ -258,72 +258,12 @@ p{
     width: 80px;
 }
 
-.slick-track{
-    min-width: 80vw;
-}
-
-.slick-slider{
-
-    min-width: 80vw;
-}
-
-.slick-track {
-    display: flex !important;
-}
-
-.slick-slide
-{
-    height: inherit !important;
-}
-
-.slick-slide > div
-{
-    height: 100%;
-}
-
-
-.slick-dots {
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	padding: 2rem 0;
-    list-style-type: none;
-}
-.slick-dots li {
-	margin: 0 0.25rem;
-}
-
-.slick-dots li button::before {
-    font-family: slick;
-    font-size: 6px;
-    line-height: 20px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 20px;
-    height: 20px;
-    content: "";
-    text-align: center;
-    opacity: 0.25;
-    color: rgb(0, 0, 0);
-    border: 2px solid #ffda61;
-    border-radius: 100%;
-    -webkit-font-smoothing: antialiased;
-}
-.slick-dots button {
-	display: block;
-	width: 1rem;
-	height: 1rem;
-	padding: 30 0 0 0;
-	border: none;
-	border-radius: 100%;
-	background-color: #ffda61;		
-	text-indent: -9999px;
-}
-
 .projects{
-justify-content: center;
-font-family: 'Staatliches', sans-serif;
+    justify-content: center;
+    font-family: 'Staatliches', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .project-button{
@@ -341,12 +281,7 @@ font-family: 'Staatliches', sans-serif;
     text-decoration: none;
 }
 
-/* .demo{
-    position: absolute;
-    bottom: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-} */
+
 
 /* music section */
 #music-portfolio{

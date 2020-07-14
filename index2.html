@@ -12,19 +12,17 @@
 
         gtag('config', 'UA-168601364-1');
     </script>
-    <meta property="og:title" content="Sollabong - Frontend dev, Music production, Online marketing">
-    <meta property="og:description"
-        content="Check out my portfolio site. If you need a website, commercial music or an online marketing specialist, contact me">
+    <meta property="og:title" content="Sollabong - Frontend fejlesztés, Zenei producer, Online marketing">
+    <meta property="og:description" content="Ha weboldalra, online marketingre, vagy reklámzenére van szükséged">
     <meta property="og:image"
         content="https://raw.githubusercontent.com/sollabong/sollabongdotcom/master/assets/sollabong-frontenddev-onlinemarketing-musicproduction.jpg">
     <meta property="og:url" content="http://sollabong.com">
-    <meta name="title" content="Sollabong - Frontend dev, Music production, Online marketing">
-    <meta name="description"
-        content="Check out my portfolio site. If you need a website, commercial music or an online marketing specialist, contact me">
+    <meta name="title" content="Sollabong - Frontend fejlesztés, Zenei producer, Online marketing">
+    <meta name="description" content="Ha weboldalra, online marketingre, vagy reklámzenére van szükséged">
     <meta name="keywords"
         content="sollabong, music, music production, dubstep, web development, webdesign, weboldal készítés, zeneírás, online marketing, freelancer, freelance">
     <meta http-equiv="Content-Type" content="text/html">
-    <meta name="language" content="English">
+    <meta name="language" content="hungarian">
     <meta name="author" content="Gábor Soltész-Kéri">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -105,7 +103,27 @@
                 </ul>
             </div>
             <div class="slideshow">
-                <div class="projects slick">
+                <div class="projects">
+                    <article class="card">
+                        <div class="card__wrapper">
+                            <figure class="card__feature">
+                                <img src="./assets/project7.jpg" class="card__img" alt="project 7">
+                            </figure>
+                            <div class="card__box">
+                                <header class="card__item card__header">
+                                    <h6 class="card__item card__item--small card__label">HTML, CSS, JAVASCRIPT</h6>
+                                    <h2 class="card__item card__item--small card__title">ETCH-A-SOLLASKETCH</h2>
+                                </header>
+                                <section class="card__item card__body">
+                                    <p>Mágikus rajztábla Javascript projektem, színválasztóval és törléssel.</p>
+
+                                </section>
+
+                            </div>
+                            <a class="demo" href="https://sollabong.github.io/etch-a-sketch/" target="_blank"><button
+                                    class="project-button">MEGNÉZEM</button></a>
+                        </div>
+                    </article>
                     <article class="card">
                         <div class="card__wrapper">
                             <figure class="card__feature">
@@ -474,55 +492,8 @@
     </section>
     <!-- here comes the js -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script type="text/javascript" src="./index.js"></script>
     <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
-    <script>
-        $(document).ready(() => {
-            $('.slideshow, .slick').slick({
-                dots: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                autoplay: false,
-                autoplaySpeed: 2500,
-
-                responsive: [
-                    {
-                        breakpoint: 1480,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 1,
-
-                            dots: true,
-                            infinite: true,
-                            speed: 300
-                        }
-                    },
-                    {
-                        breakpoint: 720,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            infinite: true,
-                            speed: 300,
-                            dots: false,
-                            arrows: false
-                        }
-
-
-                    }
-
-                ]
-            });
-
-        });
-
-    </script>
 
 </body>
 
