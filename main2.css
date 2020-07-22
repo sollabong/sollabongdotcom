@@ -281,7 +281,19 @@ p{
     text-decoration: none;
 }
 
+.project-button:hover{
+    background-color: rgb(255, 180, 40);
 
+}
+
+.github{
+    border: 1px solid rgb(117, 117, 117);
+    padding: 3px;
+    border-radius: 5px;
+    color: rgb(117, 117, 117);
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
 
 /* music section */
 #music-portfolio{
