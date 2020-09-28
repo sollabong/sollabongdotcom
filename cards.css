@@ -3,7 +3,7 @@
   text-align: center;
   transition: all .125s;
   transform: scale(1) translateY(0px);
-  margin: 5% 15px;
+  margin: 30px 15px;
   height: 500px;
   flex: 0 1 360px ;
   flex-direction: row;
